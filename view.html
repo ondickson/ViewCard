@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Alumni Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .AlumniProfile {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: center;
+        }
+
+        .card {
+            width: 900px;
+            max-width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+            
+        }
+
+        .left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .profilePhoto,
+        .fullname,
+        .email,
+        .phone,
+        .idNo {
+            margin-bottom: 0.5em;
+        }
+
+        h3,h2{
+            margin-bottom: 10px;
+            color: #272974;
+        }
+
+        .right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+
+        .profilePhoto {
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .info {
+            margin-bottom: 15px;
+        }
+
+        .Top {
+            margin-bottom: 1.5em;
+        }
+
+        .Top,
+        .bottom {
+            padding: 1.5em;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+
+        .School,
+        .Course,
+        .Elementary,
+        .JuniorHigh,
+        .SeniorHigh,
+        .SeniorHighStrand {
+            width: 50%;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .row .info {
+            flex: 1 1 45%;
+            min-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="AlumniProfile">
+            <div class="left">
+                <img class="profilePhoto"
+                    src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Profile-Image">
+                <h2 class="fullname">John C. Doe</h2>
+                <div class="email">john.doe@example.com</div>
+                <div class="phone">09171234567</div>
+                <div class="idNo"><strong>ID Number: </strong>A001</div>
+                <a href="https://facebook.com/johndoe" target="_blank">https://facebook.com/johndoe</a>
+            </div>
+
+            <div class="right">
+                <div class="Top">
+                    <h2>Educational Background</h2>
+
+                    <div class="row">
+                        <div class="School info"><strong>School/Level: </strong>School of Engineering, Architecture, and
+                            Information Technology</div>
+                        <div class="Course info"><strong>Course/Program: </strong>BS Computer Science</div>
+                    </div>
+
+                    <div class="RecentGraduate info"><strong>Recent Graduate: </strong>N/A</div>
+
+                    <h3>SMU Education History</h3>
+                    <div class="row">
+                        <div class="Elementary info"><strong>Elementary at SMU: </strong>N/A</div>
+                        <div class="JuniorHigh info"><strong>Junior High at SMU: </strong>N/A</div>
+                    </div>
+                    <div class="row">
+                        <div class="SeniorHigh info"><strong>Senior High at SMU: </strong>N/A</div>
+                        <div class="SeniorHighStrand info"><strong>Senior High Strand: </strong>N/A</div>
+                    </div>
+
+                    <div class="Tertiary info"><strong>Tertiary at SMU: </strong>2018</div>
+                    <div class="Non-Graduate info"><strong>Non-Graduate Attendance: </strong>N/A</div>
+                </div>
+
+
+                <div class="bottom">
+                    <h2>Employment Information</h2>
+                    <div class="Status info"><strong>Status: </strong>Employed</div>
+                    <div class="CurrentWork info"><strong>Current Work: </strong>Software Developer</div>
+                    <div class="CompanyAddress info"><strong>Company Address: </strong>123 Silicon Valley, California,
+                        USA
+                    </div>
+                    <div class="HomeAddress info"><strong>Home Address: </strong>456 Elm Street, LA, USA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
